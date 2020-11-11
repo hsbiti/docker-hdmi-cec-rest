@@ -1,8 +1,8 @@
-FROM resin/rpi-raspbian:jessie
-MAINTAINER Blake Blackshear <blakeb@blakeshome.com>
+FROM balenalib/rpi-raspbian:jessie
+MAINTAINER Hamza Sbiti <hamza>
 
 # remove resin repo
-RUN rm /etc/apt/sources.list.d/resin.list && \
+RUN rm /etc/apt/sources.list.d/balenalib.list && \
     apt-key del 92BF1079
 
 # install dependencies
